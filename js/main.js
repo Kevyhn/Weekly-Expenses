@@ -1,7 +1,7 @@
 let credit;
 do {
 	credit = parseInt(prompt('Weekly Expenses: $'));
-} while(isNaN(credit));
+} while(isNaN(credit) || credit <= 0);
 let creditRest = credit;
 let budgetTotal = document.querySelector('.budget-total');
 budgetTotal.textContent = `Budget: $${credit}`;
