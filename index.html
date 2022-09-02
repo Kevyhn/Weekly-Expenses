@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Weekly Expenses</title>
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<h1>Weekly Expenses</h1>
+	<div class="frame">
+		<div class="expense-details">
+			<h3>Add Spent</h3>
+			<label for="name-spent">Spent</label>
+		    <input class="input" type="text" name="name-spent" id="spent-inp" placeholder="Name"/>
+		    <label for="amount">Amount</label>
+            <input class="input" type="text" name="amount" id="amount-inp" placeholder="$00.00"/>
+            <input type="submit" id="submit-btn" placeholder="Submit"/>		
+            <div class="info">
+            	<div class="container budget-total">Budget: $</div>
+            	<div class="container remaining-budget">Remaining: $</div>
+            </div>
+		</div>
+		<div class="expenses-container">
+			<h3>Expense List</h3>
+			<div id="expenses">
+				<p class="empy">Your Expenses</p>
+			</div>
+		</div>
+	</div>
+	
+<script src="js/main.js"></script>	
+</body>
+</html>
